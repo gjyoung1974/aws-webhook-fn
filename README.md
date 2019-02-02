@@ -27,3 +27,6 @@ endpoints:
 curl --header "Content-Type: application/json" --request POST --data '{"something":"xyz","somethingelse":"xyz"}' https://{some-subdomain}.execute-api.us-east-1.amazonaws.com/dev
 ````
 
+## //TODO:    
+Enable authentication    
+
