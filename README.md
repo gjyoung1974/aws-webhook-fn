@@ -1,6 +1,6 @@
-# Generic WebHook listener Lambda Function for AWS     
+# Generic WebHook listener AWS Lambda Function    
 
-## Usage
+## Usage      
 
 ```
 $ npm install -g serverless
