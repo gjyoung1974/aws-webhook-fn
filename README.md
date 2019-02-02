@@ -17,13 +17,13 @@ $ sls info
 Service Information
 <snip>
 endpoints:
-  ANY - https://abc6defghi.execute-api.us-east-1.amazonaws.com/dev <-- Endpoint
-  ANY - https://abc6defghi.execute-api.us-east-1.amazonaws.com/dev/{proxy+}
+  ANY - https://{some-subdomain}.execute-api.us-east-1.amazonaws.com/dev <-- Endpoint
+  ANY - https://{some-subdomain}.execute-api.us-east-1.amazonaws.com/dev/{proxy+}
 ```
 
 #### Invoke via curl:     
 
 ````sh
-curl --header "Content-Type: application/json" --request POST --data '{"something":"xyz","somethingelse":"xyz"}' http://127.0.0.1:5000
+curl --header "Content-Type: application/json" --request POST --data '{"something":"xyz","somethingelse":"xyz"}' https://{some-subdomain}.execute-api.us-east-1.amazonaws.com/dev
 ````
 
