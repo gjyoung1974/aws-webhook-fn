@@ -1,5 +1,5 @@
 {
-  "name": "serverless-flask",
+  "name": "webhook-to-cloudtrail",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

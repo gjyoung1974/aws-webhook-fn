@@ -4,7 +4,7 @@
 
 ```
 $ npm install -g serverless
-$ serverless install --url https://github.com/alexdebrie/serverless-flask --name my-flask-app
+$ serverless install --url https://github.com/alexdebrie/webhook-to-cloudtrail --name my-flask-app
 $ cd my-flask-app && npm run setup
 <answer prompts>
 $ serverless deploy
