@@ -5,9 +5,10 @@
 ```
 $ npm install -g serverless
 $ serverless install --url https://github.com/alexdebrie/meraki-webhook --name my-flask-app
-$ cd my-flask-app && npm run setup
+$ cd my-flask-app
+$ npm run setup
 <answer prompts>
-$ serverless deploy
+$ sls deploy
 ```
 
 Once the deploy is complete, run `sls info` to get the endpoint:
