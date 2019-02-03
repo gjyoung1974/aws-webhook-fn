@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def webhook():
-    print("webhook");
+    print("called webhook()")
     sys.stdout.flush()
     if request.method == 'POST':
-        if request.headers['x-api-key'] == os.environ['MY_API_KEY']:
+        if request.json['organizationId'] == os.environ['ORGANIZATION_ID']:
             print(request.json)
             print("success with 200")
             return "{\"success\":\"200\"}", 200
@@ -18,7 +18,7 @@ def webhook():
             print("abort with 401");
             abort(401)
     else:
-        print("abort with 400");
+        print("abort with 400")
         abort(400)
 
 

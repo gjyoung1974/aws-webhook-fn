@@ -1,4 +1,4 @@
-service: webhook-to-cloudtrail
+service: meraki-webhook
 plugins:
   - serverless-python-requirements
   - serverless-wsgi
@@ -18,9 +18,7 @@ provider:
   stage: dev
   region: us-east-1
   environment:
-    MY_API_KEY: ***some key***
-  apiKeys:
-    - ***some key***
+    ORGANIZATION_ID: 999999
 functions:
   app:
     handler: wsgi_handler.handler

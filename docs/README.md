@@ -1,4 +1,4 @@
-# webhook-to-cloudtrail
+# meraki-webhook
 
 The fastest way to a Flask application with [Serverless](https://github.com/serverless/serverless).
 
@@ -6,7 +6,7 @@ The fastest way to a Flask application with [Serverless](https://github.com/serv
 
 ```
 $ npm install -g serverless
-$ serverless install --url https://github.com/alexdebrie/webhook-to-cloudtrail --name my-flask-app
+$ serverless install --url https://github.com/alexdebrie/meraki-webhook --name my-flask-app
 $ cd my-flask-app && npm run setup
 <answer prompts>
 $ serverless deploy
